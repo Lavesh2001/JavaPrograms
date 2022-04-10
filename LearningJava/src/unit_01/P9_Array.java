@@ -1,5 +1,7 @@
 package unit_01;
 
+import java.util.Scanner;
+
 /* Tasks given below:
 		obj.sortAnArray(array);
 		obj.findTheDuplicateElements(array);
@@ -118,6 +120,33 @@ class QuestionsOnArray {
 
 	void removeElementInArray(int[] arr) {
 		// write code here! 
+		Scanner sc= new Scanner(System.in);
+		System.out.print("\nEnter the element that you want to delete from the array: ");
+		int num=sc.nextInt();
+		int c=0;
+		for(int i=0;i<arr.length;)
+		{
+			if(arr[i]==num)
+			{  
+				c++;
+				for(int j=i+1;j<arr.length;j++)
+				{
+					arr[j-1]=arr[j];
+				}
+			}
+			else
+			{
+				i++;
+			}
+			
+		}
+		System.out.print("Array After removing the element : ");
+		for(int i=0;i<arr.length-c;i++)
+		{
+			System.out.print(arr[i]);
+			System.out.print(" ");
+			
+		}
 		
 
 	}
