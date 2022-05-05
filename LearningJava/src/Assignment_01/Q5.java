@@ -27,21 +27,69 @@ public class Q5 {
          String name;
          int age;
          int salary;
-         String department;
+         char department;
+         int A=0,B=0,C=0,D=0;
          for(int i=0;i<2;i++)
          {
       	   name=sc.nextLine();
       	   age=sc.nextInt();
       	   sc.nextLine();
-      	   department=sc.nextLine();
+      	   department=sc.next().charAt(0);   
       	   salary=sc.nextInt();
-      	   sc.nextLine();
+      	     sc.nextLine();
       	   obj[i]=new Employee(name,age,department,salary);   
          }
-          System.out.println("Salary of deparment A: "+obj[0].A);
-          System.out.println("Salary of deparment B: "+obj[0].B);
-          System.out.println("Salary of deparment C: "+obj[0].C);
-          System.out.println("Salary of deparment D: "+obj[0].D);
+         for(int i=0;i<2;i++)
+         {
+        	 if(obj[i].department=='A')
+     		{
+     			if(obj[i].salary<=30000)
+     			{
+     				A+=obj[i].salary;
+     			}
+     			else
+     			{
+     				A+=25000;
+     			}
+     		}
+     		else if(obj[i].department=='B')
+     		{
+     			if(obj[i].salary<=30000)
+     			{
+     				B+=obj[i].salary;
+     			}
+     			else
+     			{
+     				B+=25000;
+     			}
+     		}
+     		else if(obj[i].department=='C')
+     		{
+     			if(obj[i].salary<=30000)
+     			{
+     				C+=obj[i].salary;
+     			}
+     			else
+     			{
+     				C+=25000;
+     			}
+     		}
+     		else
+     		{
+     			if(obj[i].salary<=30000)
+     			{
+     				D+=obj[i].salary;
+     			}
+     			else
+     			{
+     				D+=25000;
+     			}
+     		}
+         }
+          System.out.println("Salary of deparment A: "+A);
+          System.out.println("Salary of deparment B: "+B);
+          System.out.println("Salary of deparment C: "+C);
+          System.out.println("Salary of deparment D: "+D);
 	}
 
 }
@@ -49,58 +97,13 @@ class Employee
 {
 	String name;
 	int age;
-	String department;
+	char department;
 	int salary;
-	static int A=0,B=0,C=0,D=0;
-	Employee(String name1,int age1,String department1,int salary1)
+	Employee(String name1,int age1,char department1,int salary1)
 	{
 		name=name1;
 		age=age1;
 		department=department1;
 		salary=salary1;
-		if(department=="A")
-		{
-			if(salary<=30000)
-			{
-				A+=salary;
-			}
-			else
-			{
-				A+=25000;
-			}
-		}
-		else if(department=="B")
-		{
-			if(salary<=30000)
-			{
-				B+=salary;
-			}
-			else
-			{
-				B+=25000;
-			}
-		}
-		else if(department=="C")
-		{
-			if(salary<=30000)
-			{
-				C+=salary;
-			}
-			else
-			{
-				C+=25000;
-			}
-		}
-		else
-		{
-			if(salary<=30000)
-			{
-				D+=salary;
-			}
-			else
-			{
-				D+=25000;
-			}
-		}
 	}
 }
