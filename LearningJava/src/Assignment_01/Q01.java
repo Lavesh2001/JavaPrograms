@@ -8,7 +8,7 @@ import java.util.*;
        input from Scanner class.
  */
 
-public class Q1 {
+public class Q01 {
 
 	public static void main(String[] args) {
 		
