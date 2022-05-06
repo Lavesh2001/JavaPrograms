@@ -5,7 +5,7 @@ package Assignment_01;
        display(), from more than one objects and how many times the object is
        created of a class name Employee.
  */
-public class Q7 {
+public class Q07 {
 
 	public static void main(String[] args) {
 		  
