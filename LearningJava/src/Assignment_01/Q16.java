@@ -36,15 +36,15 @@ public class Q16 {
 		System.out.println("Value of a of obj1="+obj1.a);
 		System.out.println("Value of a of obj1="+obj1.b);
 		
-		test9 obj2=new test9();
+		test8 obj2=new test9();
 		obj2.display();
 		
-		B obj3=new B();
+		A obj3=new B();
 		obj3.fun1();
 		obj3.fun2();
 		obj3.fun3();
 		
-		D obj4=new D();
+		C obj4=new D();
 		obj4.fun4();
 		obj4.fun5();
 		obj4.fun6();
@@ -92,8 +92,8 @@ class test11 implements Cloneable
 abstract class A
 {
 	abstract void fun1();//abstract method
-	abstract void fun2();
-	abstract void fun3();
+	abstract void fun2();//abstract method
+	abstract void fun3();//abstract method
 }
 class B extends A//extending abstract class 
 {
@@ -115,12 +115,12 @@ class B extends A//extending abstract class
 
 abstract class C
 {
-	abstract void fun4();
+	abstract void fun4();//abstract method
 	void fun5()
 	{
 		System.out.println("function 5");
 	}
-	abstract void fun6();
+	abstract void fun6();//abstract method
 	void fun7()
 	{
 		System.out.println("function 7");
