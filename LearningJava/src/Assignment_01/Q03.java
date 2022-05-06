@@ -13,7 +13,7 @@ import java.util.*;
    - The main method should not be in testClass, create a separate class for
      that
  */
-public class Q3 {
+public class Q03 {
 
 	public static void main(String[] args) {
 		TestClass obj=new TestClass();
