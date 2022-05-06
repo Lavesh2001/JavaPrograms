@@ -6,7 +6,7 @@ package Assignment_01;
        Int[] arr = {1,2,3,4,5,6,7,8,9}
        Note: Non relevance places would be filled with zeros.
  */
-public class Q8 {
+public class Q08 {
 
 	public static void main(String[] args) {
 		
