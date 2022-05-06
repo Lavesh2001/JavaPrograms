@@ -7,7 +7,7 @@ import unit_02.*;
        private, protected, and public.
  */
 
-public class Q9 {
+public class Q09 {
 
 	public static void main(String[] args) {
 		SampleClass2 obj=new SampleClass2();//public class from package unit_02
