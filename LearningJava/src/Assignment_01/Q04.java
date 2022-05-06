@@ -13,7 +13,7 @@ package Assignment_01;
        ClassThree obj = new ClassThree(1);
        ClassThree obj = new ClassThree();
  */
-public class Q4 {
+public class Q04 {
 
 	public static void main(String[] args) {
 		ClassThree obj = new ClassThree(1);// parameterized constructor
