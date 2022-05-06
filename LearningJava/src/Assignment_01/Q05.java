@@ -19,7 +19,7 @@ import java.util.Scanner;
      And
      arr[i].department.equals("A");   
  */
-public class Q5 {
+public class Q05 {
 
 	public static void main(String[] args) {
 		 Scanner sc=new Scanner(System.in);
