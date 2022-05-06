@@ -4,7 +4,7 @@ package Assignment_01;
  * Q2- WAP to count the total number of calls for a member function from
        more than one objects. [Let’s say, from 3 such Objects] 
  */
-public class Q2 {
+public class Q02 {
 
 	public static void main(String[] args) {
 		  
