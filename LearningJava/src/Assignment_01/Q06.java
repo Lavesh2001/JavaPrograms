@@ -8,7 +8,7 @@ import java.util.*;
    then ternary operator should call sub(a,b). Eventually print the result of
    the ternary operation on variable a and b.
  */
-public class Q6 {
+public class Q06 {
 
 	public static void main(String[] args) {
 		
