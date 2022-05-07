@@ -23,13 +23,13 @@ public class Q05 {
 
 	public static void main(String[] args) {
 		 Scanner sc=new Scanner(System.in);
-         Employee obj[]=new Employee[2];
+         Employee obj[]=new Employee[8];
          String name;
          int age;
          int salary;
          char department;
          int A=0,B=0,C=0,D=0;
-         for(int i=0;i<2;i++)
+         for(int i=0;i<8;i++)
          {
       	   name=sc.nextLine();
       	   age=sc.nextInt();
@@ -39,7 +39,7 @@ public class Q05 {
       	     sc.nextLine();
       	   obj[i]=new Employee(name,age,department,salary);   
          }
-         for(int i=0;i<2;i++)
+         for(int i=0;i<8;i++)
          {
         	 if(obj[i].department=='A')
      		{
