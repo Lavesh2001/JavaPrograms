@@ -12,7 +12,8 @@ public class Q12 {
 
 }
 /*
- * if we place return type in constructor then it will not give any error but it will give a warning:This method has a constructor name
+ * if we place return type in constructor then it will not give any error
+ *  but it will give a warning:This method has a constructor name
  *  If we add a return type to a constructor, then it will become a method of the class. 
  *  This is the way java runtime distinguish between a normal method and a constructor.
  * 
