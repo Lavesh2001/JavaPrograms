@@ -11,17 +11,21 @@ import java.util.InputMismatchException;
  */
 public class P14_ExceptionHandlingInJava {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 		
          ExceptionInJava obj=new ExceptionInJava();
         // obj.basicException();
-         obj.handleException();
+         //obj.handleException();
         // obj.mutipleCatch();
-         obj.inputMismatchException();
-        //obj.stackOverFlowError(1);
-         obj.indexOutOfBoundException();
-         obj.nullPointerException();
-         obj.useOfThrow();
+         //obj.inputMismatchException();
+        obj.stackOverFlowError(1);
+         //obj.indexOutOfBoundException();
+         //obj.nullPointerException();
+        try {
+			obj.useOfThrow(18);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
          obj.useOfThrows_And_Finally();
 	}
 
@@ -92,10 +96,11 @@ class ExceptionInJava
 			stackOverFlowError(i);
 		}
 	   }
-	   catch(StackOverflowError e)
+	   catch(Exception e)
 	   {
 		    System.out.println(e.getMessage());
 	   }
+		System.out.println("rest of the code");
 	}
 	
 	void indexOutOfBoundException()
@@ -123,12 +128,28 @@ class ExceptionInJava
 		}
 		System.out.println("rest of the code");
 	}
-	void useOfThrow()
+	void useOfThrow(int age)throws Exception
 	{
+		if(age<18)
+		{
+			throw new Exception();
+		}
+		else
+		{
+			System.out.println("You are allowed for voting");
+		}
 		
 	}
 	void useOfThrows_And_Finally()
 	{
-		
+		try {
+			useOfThrow(18);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		finally {
+			System.out.println("always excuted");
+		}
 	}
 }
