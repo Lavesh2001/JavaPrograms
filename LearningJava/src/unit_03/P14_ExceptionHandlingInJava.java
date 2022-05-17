@@ -18,11 +18,11 @@ public class P14_ExceptionHandlingInJava {
          //obj.handleException();
         // obj.mutipleCatch();
          //obj.inputMismatchException();
-        obj.stackOverFlowError(1);
+       // obj.stackOverFlowError(1);
          //obj.indexOutOfBoundException();
          //obj.nullPointerException();
         try {
-			obj.useOfThrow(18);
+			obj.useOfThrow(17);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
