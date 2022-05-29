@@ -1,5 +1,5 @@
-Java 
+java is a platform independent language
 is
-a 
+a
 cool
-Language
+language
